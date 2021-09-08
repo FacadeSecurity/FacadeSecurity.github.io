@@ -1,0 +1,205 @@
+html{
+scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+header{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color:white;
+    justify-content: center;
+    align-items: center;
+}
+#headerContent{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    text-align: center;
+}
+#explore{
+    margin: 0px;
+    border: 1px solid white;
+    padding: 14px 50px 14px 50px;
+    width: 15%;
+    border-radius: 4px;
+    transition: background-color .5s;
+}
+#explore:hover{
+    background-color: 57cbcc;
+}
+a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    top: 0;
+    z-index: 50;
+    position: sticky;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: #1d2024;
+}
+#navPic{
+    flex-grow: 0;
+    flex-shrink: 0;
+    object-fit: contain;
+    margin-right: 50%;
+}
+#space{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#navLinks > a{
+    color: #7c9092;
+    margin-right: 10px;
+    transition: color .5s;
+}
+#navLinks > a:hover{
+    color: #abc7c8;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #353b43;
+    color: white;
+    text-align: center;
+}
+main > div{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-top: 3%;
+    text-align: center;
+    align-items: center;
+}
+#about{
+    height: 100vh;
+    /*border: 5px solid red;*/
+}
+#about>p{
+    width: 45%;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+hr{
+    border: 2px solid rgba(236,239,241,7%);
+    width: 33%;
+}
+#threeBlocks{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40%;
+    margin-top: 3%;
+}
+#threeBlocks > div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    margin: 1.5%;
+    padding:3%;
+    background-color: #242930;
+}
+#threeBlocks > div > div{
+    display: flex;
+}
+#threeBlocks > div > div:nth-child(1){
+    text-align: center;
+    align-items: center;
+    flex-grow: 2;
+}
+#threeBlocks > div > div:nth-child(2){
+    flex-grow: 1;
+}
+#services{
+	padding-bottom:1%;
+}
+.service{
+    display: flex;
+	justify-content: center;
+    width: 100%;
+    height: 40%;
+    margin-top: 3%;
+    text-align: center;
+    align-items: center;
+    background-color: #242930;
+}
+/*
+.servPicture{
+    width: 0%;
+} */
+
+.servText{
+    width: 90%;
+	text-align: center;
+    padding: 15px;
+    /*border: 5px solid purple;*/
+}
+/* 
+#services > .service:nth-child(even){
+    flex-direction: row-reverse;
+}
+#services > .service:nth-child(odd){
+    flex-direction: row;
+}
+*/
+#threeBlocks > div, .service{
+    transition: box-shadow.2s;
+}
+#threeBlocks > div:hover, .service:hover{
+    box-shadow: 0px 2px cyan;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #292f36;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+#info{
+    column-count: 2;
+    column-gap: 160px;
+    line-height: 1.6;
+}
+/*Mobile CSS*/
+@media (max-width: 990px){
+main > div{
+    width:80%;
+}
+#about>p{
+    width:100%;
+}
+#threeBlocks{
+    display: flex;
+    flex-direction: column;
+}
+#threeBlocks > div{
+    margin: 0px;
+}
+.service{
+    flex-direction: column !important;
+}
+#info{
+    column-count: 1;
+}
+}
