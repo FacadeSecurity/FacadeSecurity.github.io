@@ -81,7 +81,7 @@ main{
 main > div{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 70%;
     padding-top: 3%;
     text-align: center;
     align-items: center;
@@ -91,7 +91,7 @@ main > div{
     /*border: 5px solid red;*/
 }
 #about>p{
-    width: 45%;
+    width: 65%;
     text-align: center;
     font-size: 1rem;
     line-height: 1.6;
@@ -104,8 +104,8 @@ hr{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 40%;
-    margin-top: 3%;
+    height: 45%;
+    margin-top: 2%;
 }
 #threeBlocks > div{
     display: flex;
@@ -130,6 +130,7 @@ hr{
     flex-grow: 1;
 }
 #services{
+    margin-top: 2%;
 	padding-bottom:1%;
 }
 .service{
@@ -182,9 +183,17 @@ footer{
     line-height: 1.6;
 }
 /*Mobile CSS*/
+@media(max-width:1600px){
+#threeblocks{
+    font-size: 1.5vw;
+    }
+}
 @media (max-width: 990px){
 main > div{
     width:80%;
+}
+#about{
+    flex-basis: 70vh;
 }
 #about>p{
     width:100%;
@@ -192,6 +201,7 @@ main > div{
 #threeBlocks{
     display: flex;
     flex-direction: column;
+    font-size: 20px;
 }
 #threeBlocks > div{
     margin: 0px;
@@ -202,4 +212,9 @@ main > div{
 #info{
     column-count: 1;
 }
+}
+@media (max-width: 750px){
+#about{
+    height: 70vh;
+}   
 }
