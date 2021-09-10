@@ -179,8 +179,17 @@ footer{
 }
 #info{
     column-count: 2;
-    column-gap: 160px;
+    column-gap: 0px;
     line-height: 1.6;
+}
+#info p{
+    margin-top: 0px;
+}
+#email{
+    text-align: right;
+}
+#bottomLogo{
+    margin-top: 1%;
 }
 /*Mobile CSS*/
 @media(max-width:1600px){
